@@ -19,7 +19,11 @@ map('n', 'F', '<C-d>',opts)
 map('n', '<C-c>', '<Esc>',opts)
 map('v', '<C-c>', '<Esc>',opts)
 map('i', '<C-c>', '<Esc>',opts)
-
+-- Move in insert
+map('i', '<C-k>', '<C-o>gk',opts)
+map('i', '<C-h>', '<Left>',opts)
+map('i', '<C-l>', '<Right>',opts)
+map('i', '<C-j>', '<C-o>gj',opts)
 local set = vim.opt
 
 -- Set the behavior of tab

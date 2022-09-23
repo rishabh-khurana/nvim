@@ -15,5 +15,20 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
   -- File Buffer
   use 'ThePrimeagen/harpoon'
-
+  -- LSP and completion
+  use 'onsails/lspkind-nvim' -- vscode-like pictograms
+  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
+  use 'hrsh7th/nvim-cmp' -- Completion
+  use "neovim/nvim-lspconfig" -- enable LSP
+  -- Snippets with completion
+  use 'L3MON4D3/LuaSnip'
+  -- Tree Sitter - Higlights syntax - TODO
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+  -- Auto Pair and Tags
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag' 
   end)
