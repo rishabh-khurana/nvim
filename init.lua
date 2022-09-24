@@ -5,6 +5,8 @@ local opts = {noremap = true, silent = true}
 vim.wo.relativenumber = true
 -- For macOS clipboard
 vim.opt.clipboard:append {'unnamedplus'}
+-- For less revolting colors
+vim.opt.termguicolors = true
 
 map('n', '<C-h>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>',opts)
 map('n', 'mm', ':lua require("harpoon.mark").add_file()<CR>',opts)

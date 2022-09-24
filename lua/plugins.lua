@@ -9,6 +9,7 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
+  -- Solarised - only works on iterm2
   -- Telescope with ripgrep installed globally
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
