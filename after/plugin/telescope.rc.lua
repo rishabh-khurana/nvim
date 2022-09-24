@@ -50,8 +50,7 @@ telescope.load_extension("file_browser")
   end)
 
   --map('n', 'sg', ':Telescope git_status<CR>',opts)
-  vim.keymap.set('n','sg',
-  function()
+  vim.keymap.set('n','sg',function()
     builtin.git_status({
       initial_mode = "normal",
     })
