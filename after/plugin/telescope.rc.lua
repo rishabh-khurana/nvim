@@ -3,7 +3,7 @@ if (not status) then return end
 local actions = require('telescope.actions')
 local builtin = require("telescope.builtin")
 
-local fb_actions = require "telescope".extensions.file_browser.actions
+-- local fb_actions = require "telescope".extensions.file_browser.actions
 
 local function telescope_buffer_dir()
   return vim.fn.expand('%:p:h')
@@ -17,25 +17,25 @@ telescope.setup {
       },
     },
   },
-  extensions = {
-    file_browser = {
-      theme = "dropdown",
-      -- disables netrw and use telescope-file-browser in its place
-      hijack_netrw = true,
-      initial_mode = "normal",
-      mappings = {
-        -- your custom insert mode mappings
-        ["n"] = {
-          -- your custom normal mode mappings
-          ["N"] = fb_actions.create,
-          ["h"] = fb_actions.goto_parent_dir,
-        },
-      },
-    },
-  },
+  -- extensions = {
+  --   file_browser = {
+  --     theme = "dropdown",
+  --     -- disables netrw and use telescope-file-browser in its place
+  --     hijack_netrw = true,
+  --     initial_mode = "normal",
+  --     mappings = {
+  --       -- your custom insert mode mappings
+  --       ["n"] = {
+  --         -- your custom normal mode mappings
+  --         ["N"] = fb_actions.create,
+  --         ["h"] = fb_actions.goto_parent_dir,
+  --       },
+  --     },
+  --   },
+  -- },
 }
 
-telescope.load_extension("file_browser") 
+--telescope.load_extension("file_browser") 
 
   vim.keymap.set('n', '<C-p>',
   function()
@@ -56,16 +56,16 @@ telescope.load_extension("file_browser")
     })
   end)
 
-  vim.keymap.set("n", "sf", function()
-    telescope.extensions.file_browser.file_browser({
-      path = "%:p:h",
-      cwd = telescope_buffer_dir(),
-      initial_mode = "normal",
-      respect_gitignore = false,
-      hidden = true,
-      grouped = true,
-      previewer = false,
-      layout_config = { height = 40 }
-    })
-  end)  
+  -- vim.keymap.set("n", "sf", function()
+  --   telescope.extensions.file_browser.file_browser({
+  --     path = "%:p:h",
+  --     cwd = telescope_buffer_dir(),
+  --     initial_mode = "normal",
+  --     respect_gitignore = false,
+  --     hidden = true,
+  --     grouped = true,
+  --     previewer = false,
+  --     layout_config = { height = 40 }
+  --   })
+  -- end)  
   

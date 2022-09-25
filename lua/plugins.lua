@@ -13,7 +13,7 @@ packer.startup(function(use)
   -- Telescope with ripgrep installed globally
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-file-browser.nvim'
+  -- use 'nvim-telescope/telescope-file-browser.nvim'
   -- File Buffer
   use 'ThePrimeagen/harpoon'
   -- LSP and completion
@@ -33,4 +33,10 @@ packer.startup(function(use)
   -- Auto Pair and Tags
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag' 
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+        'kyazdani42/nvim-web-devicons', -- optional, for file icons
+      },
+    }
   end)

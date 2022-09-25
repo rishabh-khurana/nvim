@@ -28,6 +28,9 @@ map('i', '<C-k>', '<C-o>gk',opts)
 map('i', '<C-h>', '<Left>',opts)
 map('i', '<C-l>', '<Right>',opts)
 map('i', '<C-j>', '<C-o>gj',opts)
+-- File browser
+map('n','<space>e',':NvimTreeToggle<CR>',opts)
+map('n','<space>h',':NvimTreeFindFile<CR>',opts)
 local set = vim.opt
 
 -- Set the behavior of tab
