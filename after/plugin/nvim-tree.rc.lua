@@ -15,7 +15,6 @@ nvim_tree.setup {
   hijack_netrw = true,
   open_on_setup = false,
   view = {
-    auto_resize = true,
     mappings = {
       custom_only = false,
       list = {

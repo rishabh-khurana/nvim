@@ -33,6 +33,8 @@ map('n','<space>e',':NvimTreeToggle<CR>',opts)
 map('n','<space>h',':NvimTreeFindFile<CR>',opts)
 local set = vim.opt
 
+map('n','<C-t>',':ToggleTerm direction=float<CR>',opts)
+
 -- Set the behavior of tab
 set.tabstop = 2
 set.shiftwidth = 2
