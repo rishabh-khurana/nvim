@@ -10,6 +10,10 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   -- Solarised - only works on iterm2
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
   -- Telescope with ripgrep installed globally
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
@@ -42,5 +46,9 @@ packer.startup(function(use)
   use {
     "akinsho/toggleterm.nvim", 
     tag = '*', config = function() require("toggleterm").setup() end,
+  }
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
   }
   end)
