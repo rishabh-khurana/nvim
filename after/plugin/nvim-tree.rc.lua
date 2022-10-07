@@ -14,6 +14,7 @@ nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
   open_on_setup = false,
+  update_cwd = true,
   view = {
     mappings = {
       custom_only = false,
