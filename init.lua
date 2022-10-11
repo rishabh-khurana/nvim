@@ -14,6 +14,9 @@ map('n', 'H', '^',opts)
 map('n', 'L', '$',opts)
 map('v', 'H', '^',opts)
 map('v', 'L', '$',opts)
+-- For shifting lines
+map('v', 'J', ":m '>+1<CR>gv=gv",opts)
+map('v', 'K', ":m '<-2<CR>gv=gv",opts)
 map('n', 'U', '<C-R>',opts)
 map('n', 'B', '<C-u>',opts)
 map('n', 'F', '<C-d>',opts)
@@ -41,9 +44,3 @@ set.shiftwidth = 2
 set.softtabstop = 2
 set.expandtab = true
 
--- Path completion
-require'cmp'.setup {
-  sources = {
-    { name = 'path' }
-  }
-}
