@@ -8,6 +8,8 @@ vim.opt.clipboard:append {'unnamedplus'}
 -- For less revolting colors
 vim.opt.termguicolors = true
 
+ -- vim.api.nvim_create_autocmd("BufReadPost",{command = ":lua require('harpoon.mark').add_file()"})
+
 map('n', '<C-h>', ':lua require("harpoon.ui").toggle_quick_menu()<CR>',opts)
 map('n', 'mm', ':lua require("harpoon.mark").add_file()<CR>',opts)
 map('n', 'H', '^',opts)
