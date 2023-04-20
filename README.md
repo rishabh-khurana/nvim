@@ -6,3 +6,6 @@ Nvim configuration
 
 ## Install Packer
 
+## Install typescript language server
+
+`npm install -g typescript typescript-language-server`
