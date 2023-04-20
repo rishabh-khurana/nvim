@@ -17,3 +17,9 @@ https://github.com/wbthomason/packer.nvim
 https://github.com/BurntSushi/ripgrep
 
 `brew install ripgrep`
+
+# Install and setup nerd fonts 
+
+`brew tap homebrew/cask-fonts`
+
+`brew install --cask font-hack-nerd-font`
