@@ -23,3 +23,5 @@ https://github.com/BurntSushi/ripgrep
 `brew tap homebrew/cask-fonts`
 
 `brew install --cask font-hack-nerd-font`
+
+Go to preferences in iterm and select nerd-font in font
