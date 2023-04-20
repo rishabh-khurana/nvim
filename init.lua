@@ -1,4 +1,3 @@
-require('base')
 require('plugins')
 local map = vim.api.nvim_set_keymap
 local opts = {noremap = true, silent = true}
@@ -33,14 +32,11 @@ map('i', '<C-k>', '<C-o>gk',opts)
 map('i', '<C-h>', '<Left>',opts)
 map('i', '<C-l>', '<Right>',opts)
 map('i', '<C-j>', '<C-o>gj',opts)
--- File browser
-map('n','<space>e',':NvimTreeToggle<CR>',opts)
-map('n','<space>h',':NvimTreeFindFile<CR>',opts)
-local set = vim.opt
 
 map('n','<C-t>',':ToggleTerm direction=float<CR>',opts)
 
 -- Set the behavior of tab
+local set = vim.opt
 set.tabstop = 2
 set.shiftwidth = 2
 set.softtabstop = 2
