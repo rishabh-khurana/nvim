@@ -31,7 +31,10 @@ https://github.com/BurntSushi/ripgrep
 
 `brew install --cask font-hack-nerd-font`
 
-Go to preferences in iterm and select nerd-font in font
+Go to preferences in iterm and select nerd-font in font settings
+
+<img width="639" alt="Screen Shot 2023-04-21 at 3 47 25 pm" src="https://user-images.githubusercontent.com/25672349/233550512-84b1a512-7b0b-4535-87b5-d87f73fcd41b.png">
+
 
 ## Start nvim and install all plugins
 
@@ -44,4 +47,5 @@ Next press `shift + :` and type PackerInstall, hit Enter key
 <img width="819" alt="Screen Shot 2023-04-21 at 3 43 48 pm" src="https://user-images.githubusercontent.com/25672349/233550003-b6e9a83f-583d-40e2-b145-5e996cebc7c7.png">
 
 ## You are good to go!
+
 
