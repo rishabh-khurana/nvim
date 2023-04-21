@@ -35,7 +35,7 @@ Go to preferences in iterm and select nerd-font in font
 
 ## Start nvim and install all plugins
 
-Hit enter after typing `nvim` in your console
+Hit enter after typing `nvim` in your terminal - make sure you have iterm2 - https://iterm2.com/
 
 <img width="540" alt="Screen Shot 2023-04-21 at 3 41 28 pm" src="https://user-images.githubusercontent.com/25672349/233549705-c4949e29-2e84-43ed-b484-7ab69a09cd19.png">
 
