@@ -1,6 +1,11 @@
 # nvim
 Nvim configuration
 
+```
+git clone 
+
+```
+
 ## Install nvim 
 `brew install nvim`
 
