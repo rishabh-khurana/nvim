@@ -14,3 +14,13 @@ end
 nvim_lsp.tsserver.setup {
   on_attach=on_attach,
 }
+
+nvim_lsp.eslint.setup({
+  --- format on save eslint server 
+  on_attach = function(client, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+})
